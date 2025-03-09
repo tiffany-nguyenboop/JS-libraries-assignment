@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    
+    <link rel="stylesheet" href="styles/style.css">
+    
+    <!-- GLIDE.JS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/css/glide.core.min.css">
+    
+    <!-- Parsley Form CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.css">
+    
+    <!-- Leaflet Map CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+    
+    <!-- AOS (Animate On Scroll) CSS -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+    
+    <title>Tiffany JS Libraries Assignment</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="logo">
+            <img src="styles/5219577.png" alt="Logo" class="logo-img">
+            KKGo
+        </div>
+        <div class="burger-menu" id="burgerMenu">
+            <div class="burger-icon"></div>
+            <div class="burger-icon"></div>
+            <div class="burger-icon"></div>
+        </div>
+
+        <nav class="nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- HERO Section -->
+    <section class="hero" data-aos="fade-down">
+        <div class="hero-content">
+            <h1>Discover Asia: <br> Your Ultimate Travel Adventure</h1>
+        </div>
+
+        <p data-aos="fade-right">Embark on an unforgettable journey through Asia's vibrant cultures, breathtaking landscapes, and hidden gems. Explore, experience, and enjoy Asia with just one click—where your dream adventure begins!</p>
+    </section>
+
+    
+
+    <!-- GLIDE.JS Carousel -->
+    <div class="glide" data-aos="fade-up">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide"><img src="styles/travel4.jpg" alt="Image 1"></li>
+                <li class="glide__slide"><img src="styles/travel2.jpg" alt="Image 2"></li>
+                <li class="glide__slide"><img src="styles/travel3.jpg" alt="Image 3"></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Travel Articles -->
+    <div class="article-thumbnails">
+        <div class="article-thumbnail">
+            <img src="styles/travel1.jpg" alt="Article img">
+            <div class="article-content">
+                <h2>Timeless Thailand</h2>
+                <p>Discover vibrant markets, serene temples, and pristine beaches in Thailand—a perfect blend of tradition and modern allure</p>
+            </div>
+        </div>
+        
+        <div class="article-thumbnail">
+            <img src="styles/travel5.jpg" alt="Mountain Adventure">
+            <div class="article-content">
+                <h2>Spectacular Singapore</h2>
+                <p>Experience the dynamic fusion of futuristic architecture and lush green spaces in Singapore, a city that never ceases to amaze</p>
+            </div>
+        </div>
+        
+        <div class="article-thumbnail">
+            <img src="styles/travel6.jpg" alt="Urban Escape">
+            <div class="article-content">
+                <h2>Vibrant Vietnam</h2>
+                <p>Journey through Vietnam's rich history, bustling streets, and breathtaking landscapes that capture the heart of Southeast Asia</p>
+            </div>
+        </div>
+
+        <div class="article-thumbnail">
+            <img src="styles/travel3.jpg" alt="Urban Escape">
+            <div class="article-content">   
+                <h2>Incredible Indonesia</h2>
+                <p>Explore Indonesia's diverse islands, vibrant cultures, and scenic wonders—from tranquil beaches to lush rainforests</p>
+            </div>
+        </div>
+      </div>
+
+      <div class="button-container">
+        <a href="articles.html" class="read-more-btn">Check out more travel plans</a>
+    </div>
+
+    <!-- Contact Form Parsley -->
+    <div class="contact-form" data-aos="zoom-in">
+        <h1>Sign up for great deals</h1>
+        <form id="example-form" data-parsley-validate>
+            <div>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required 
+                    data-parsley-maxlength="15" 
+                    data-parsley-required-message="Name is required" 
+                    data-parsley-maxlength-message="Name must be 15 characters or less">
+            </div>
+            <div>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required 
+                    data-parsley-type="email" 
+                    data-parsley-required-message="Email is required" 
+                    data-parsley-type-message="Invalid email address">
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    
+    <!-- Leaflet Map -->
+    <div id="address">
+        <h2> Visit Our Office </h2>
+        <p> 8888 Lakeshore Blvd East, Toronto, Ontario, Canada</p>
+    </div>
+    <div id="map" class="map-container" data-aos="fade-up"></div>
+
+    <footer>
+        <div class="footer-container">
+            <div class="follow-us">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                <a href="#" class="icon facebook">f</a>
+                <a href="#" class="icon linkedin">in</a>
+                <a href="#" class="icon twitter">#</a>
+                </div>
+            </div>
+        </div>
+            <div class="information">
+                <h3>Information</h3>
+                <ul>
+                <li><a href="#">About our app</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">We are hiring!</a></li>
+                <li><a href="#">Get in Touch</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Resources</a></li>
+                <li><a href="#">Things We Like</a></li>
+                <li><a href="#">Terms of Service</a></li>
+                </ul>
+            </div>
+    </footer>
+    
+
+ <!-- External Libraries -->
+    <!-- GLIDE.JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide/dist/glide.min.js" defer></script>
+    
+    <!-- Parsley JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/parsley.js/2.9.2/parsley.min.js" defer></script>
+    
+    <!-- Leaflet Map JS -->
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js" defer></script>
+    
+    <!-- AOS (Animate On Scroll) JS -->
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js" defer></script>
+    
+<!-- Main JS -->
+    <script src="styles/main.js" defer></script>
+</body>
+</html>
